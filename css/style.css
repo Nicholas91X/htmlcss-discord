@@ -4,3 +4,49 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    height: 75px;
+}
+
+
+/* jumbotron */
+body section {
+    height: 600px;
+}
+
+
+/* main */
+
+/* footer */
+
+/* debug */
+.debug header {
+    background-color: blue;
+}
+
+.debug .main-container {
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.debug section {
+    background-color: yellowgreen;
+}
+
+.debug main {
+    height: 1000px;
+    background-color: chocolate;
+}
+
+.debug footer {
+    height: 600px;
+    background-color: darkmagenta;
+}
