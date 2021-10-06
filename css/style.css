@@ -31,7 +31,6 @@ body {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    line-height: 75px;
 }
 
 .main-container::after {
@@ -48,6 +47,7 @@ a {
 header {
     height: 75px;
     background-color: #404eed;
+    line-height: 75px;
 }
 
 #logo,
@@ -99,6 +99,36 @@ header nav ul li a {
 /* jumbotron */
 body section {
     height: 600px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.jumbo-text {
+    width: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbo-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.jumbo-text p {
+    font-size: 18px;
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+#scarica,
+#browser {
+    margin: 0 10px;
 }
 
 
