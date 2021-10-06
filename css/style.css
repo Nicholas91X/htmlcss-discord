@@ -5,15 +5,94 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* buttons */
+.btn {
+    padding: 10px 15px;
+    border-radius: 2em;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
 .main-container {
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    line-height: 75px;
+}
+
+.main-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* header */
 header {
     height: 75px;
+    background-color: #404eed;
+}
+
+#logo,
+#accedi,
+header nav {
+    float: left;
+}
+
+#logo,
+#accedi {
+    width: 25%;
+    height: 100%;
+}
+
+#logo {
+    text-align: left;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+#accedi {
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 15px;
 }
 
 
@@ -28,14 +107,27 @@ body section {
 /* footer */
 
 /* debug */
-.debug header {
-    background-color: blue;
+/* .debug header {
+    background-color: #404eed;
+} */
+
+/* .debug #logo,
+.debug #accedi {
+    background-color: lightgreen;
 }
 
+.debug nav {
+    background-color: magenta;
+} */
+
+
 .debug .main-container {
-    background-color: yellow;
     border: 1px solid black;
 }
+
+/* .debug header {
+    background-color: yellow;
+} */
 
 .debug section {
     background-color: yellowgreen;
