@@ -97,7 +97,7 @@ header nav ul li a {
 
 
 /* jumbotron */
-body section {
+body section.background {
     height: 600px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -133,7 +133,47 @@ body section {
 
 
 /* main */
+.section-container {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 50px 0 200px;
+}
 
+section .image,
+section .text {
+    float: left;
+}
+
+section .image {
+    width: 50%;
+    margin:0 75px;
+}
+
+section .text {
+    width: 25%;
+    padding-top: 20px;
+}
+
+.text h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.text p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+#image {
+    width: 500px;
+}
+
+main section:nth-child(2) {
+    padding-left: 150px;
+}
 /* footer */
 
 /* debug */
@@ -151,22 +191,23 @@ body section {
 } */
 
 
-.debug .main-container {
+/* .debug .main-container {
     border: 1px solid black;
-}
+} */
 
 /* .debug header {
     background-color: yellow;
 } */
 
-.debug section {
+/* .debug section {
     background-color: yellowgreen;
-}
+} */
 
-.debug main {
+/* .debug main {
     height: 1000px;
     background-color: chocolate;
-}
+} */
+
 
 .debug footer {
     height: 600px;
